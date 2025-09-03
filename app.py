@@ -1,11 +1,4 @@
-import streamlit as st
-import pandas as pd
-import io
-from utils import load_price_list_by_letter, load_invoice_by_letter, match_invoices_to_pricelist, to_excel_bytes
-
-st.set_page_config(page_title="Verifica prezzi: Listino vs Fatture", layout="wide")
-
-st.title("\ud83d\udd0e Verifica prezzi: Listino (PA) vs Fatture")
+st.title("Verifica prezzi: Listino (PA) vs Fatture")
 st.markdown("""
 Carica un file di listino e una o più fatture (Excel).
 Il matching avviene esclusivamente per Codice e Prezzo.
